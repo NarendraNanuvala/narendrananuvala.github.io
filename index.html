@@ -3,167 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narendra Nanuvala | Full Stack Java Developer</title>
+    <title>Narendra Nanuvala - Java Full Stack Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* General Styles */
         body {
-            font-family: 'Roboto', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
+            background: url('https://images.unsplash.com/photo-1532074205216-d0e1f8f1f9f8?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+            background-size: cover;
             color: #333;
         }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-            background-color: #fff;
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.95);
+            min-height: 100vh;
+            padding: 40px;
         }
-        header {
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        h1, h2, h3 {
+            margin: 10px 0;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        p, li {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        .header {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            gap: 20px;
+            flex-wrap: wrap;
         }
-        header img {
+        .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            margin-right: 20px;
             object-fit: cover;
+            border: 3px solid #1a73e8;
         }
-        header div h1 {
-            margin: 0;
-            font-size: 2em;
+        .contact-info {
+            flex: 1;
         }
-        header div p {
-            margin: 5px 0;
+        .resume-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #1a73e8;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
         }
-        .section {
-            margin-bottom: 25px;
+        .resume-btn:hover {
+            background-color: #0c4bbf;
         }
-        .section h2 {
-            border-bottom: 2px solid #007BFF;
-            padding-bottom: 5px;
-            color: #007BFF;
-        }
-        ul {
-            padding-left: 20px;
-        }
+
+        /* Skills */
         .skills {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
+            gap: 15px;
         }
-        .skill-category {
-            background-color: #e9ecef;
+        .skills div {
+            background: #f0f0f0;
             padding: 10px;
             border-radius: 5px;
         }
-        .download-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
+
+        /* Experience & Education */
+        .experience, .education {
+            margin-top: 20px;
         }
-        .download-btn:hover {
-            background-color: #0056b3;
+        .job {
+            margin-bottom: 20px;
         }
-        .contact a {
-            color: #007BFF;
-            text-decoration: none;
+        .job h3 {
+            margin: 0;
         }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        .experience-item {
-            margin-bottom: 15px;
-        }
-        .experience-item h3 {
-            margin: 5px 0;
-        }
-        .experience-item p {
-            margin: 2px 0;
+        .job span {
+            font-style: italic;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="profile.jpg" alt="Narendra Nanuvala">
-            <div>
+    <div class="overlay">
+        <!-- Header -->
+        <div class="header">
+            <img src="profile.jpg" alt="Narendra Nanuvala" class="profile-img">
+            <div class="contact-info">
                 <h1>Narendra Nanuvala</h1>
-                <p>Sr. Java/J2EE Developer</p>
-                <p class="contact">
-                    <a href="mailto:narendra04061994@gmail.com">narendra04061994@gmail.com</a> | 667-431-6218 | 
-                    <a href="https://www.linkedin.com/in/narendra-n-770b6b187" target="_blank">LinkedIn</a>
-                </p>
-                <a class="download-btn" href="Narendra_Nanuvala_Resume.pdf" download>Download Resume</a>
-            </div>
-        </header>
-
-        <div class="section">
-            <h2>Summary</h2>
-            <ul>
-                <li>Senior Java Developer with 10+ years of experience designing and delivering scalable enterprise applications using Java 8–21, Spring Boot, and microservices architecture.</li>
-                <li>Proven ability to deliver projects on time while implementing efficient, client-focused business solutions.</li>
-                <li>Experience with SDLC using Waterfall and Agile methodologies.</li>
-                <li>Skilled in Relational databases (MySQL) and NoSQL (MongoDB).</li>
-                <li>Hands-on with Core Java, Spring Boot, Hibernate, REST/SOAP APIs, Angular, AWS, Docker, Jenkins, and CI/CD pipelines.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Skills</h2>
-            <div class="skills">
-                <div class="skill-category"><strong>Languages:</strong> Java 8–21, J2EE, SQL</div>
-                <div class="skill-category"><strong>Front-End:</strong> HTML5, CSS3, JavaScript, TypeScript, jQuery, Angular 14/JS, Bootstrap</div>
-                <div class="skill-category"><strong>Frameworks:</strong> Spring Boot, Spring MVC, Spring Security, Hibernate, JPA, Log4j</div>
-                <div class="skill-category"><strong>Web Services:</strong> REST, SOAP, Jersey, JAX-RS</div>
-                <div class="skill-category"><strong>Databases:</strong> MySQL, MongoDB, Oracle</div>
-                <div class="skill-category"><strong>DevOps & Tools:</strong> Maven, Gradle, Jenkins, Docker, Kafka, JUnit, Mockito, Git, Postman</div>
-                <div class="skill-category"><strong>Cloud:</strong> AWS (Lambda, S3, EC2, SNS, SQS, IAM, Cognito, AppSync, ECS, CloudFormation, CloudWatch)</div>
-                <div class="skill-category"><strong>Version Control:</strong> Git, SVN</div>
-                <div class="skill-category"><strong>Application Servers:</strong> Apache Tomcat, WebLogic, IBM WebSphere</div>
-                <div class="skill-category"><strong>IDEs:</strong> Eclipse, IntelliJ, Spring Tool Suite</div>
-                <div class="skill-category"><strong>OS:</strong> Windows, Linux</div>
+                <h2>Sr. Java/J2EE Developer</h2>
+                <p>Email: <a href="mailto:narendra04061994@gmail.com">narendra04061994@gmail.com</a></p>
+                <p>Phone: 667-431-6218</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/narendra-n-770b6b187" target="_blank">linkedin.com/in/narendra-n-770b6b187</a></p>
+                <a href="Narendra_Resume.pdf" class="resume-btn" download>Download Resume</a>
             </div>
         </div>
 
-        <div class="section">
-            <h2>Work Experience</h2>
-            <div class="experience-item">
-                <h3>Sr. Java/J2EE Developer | Legal & General, Frederick, Maryland (via TCS)</h3>
-                <p><em>Jun 2023 – Present</em></p>
-                <p>Developed microservices using Spring Boot, integrated AWS services, implemented Kafka messaging, REST APIs, and Angular front-end components. Led modernization efforts and CI/CD deployment via Jenkins & Docker.</p>
+        <!-- Summary -->
+        <h2>Summary</h2>
+        <p>Senior Java Developer with 10+ years of experience designing and delivering scalable enterprise applications using Java 8–21, Spring Boot, and microservices architecture. Proven track record of reducing application deployment time by up to 40% and enhancing system reliability via AWS cloud solutions. Experienced in SDLC methodologies, databases, front-end frameworks, cloud technologies, DevOps, and microservices architecture.</p>
+
+        <!-- Skills -->
+        <h2>Skills</h2>
+        <div class="skills">
+            <div><strong>Languages:</strong> Java 8–21, J2EE, SQL</div>
+            <div><strong>Front-End:</strong> HTML5, CSS3, JavaScript, TypeScript, jQuery, Angular 14, AngularJS, Bootstrap</div>
+            <div><strong>Frameworks:</strong> Spring Boot, Spring MVC, Spring Security, Hibernate, JPA, Log4j</div>
+            <div><strong>Web Services:</strong> REST, SOAP, Jersey, JAX-RS</div>
+            <div><strong>Databases:</strong> MySQL, MongoDB, Oracle</div>
+            <div><strong>DevOps & Tools:</strong> Maven, Gradle, Jenkins, Docker, Kafka, JUnit, Mockito, Git, SoapUI, Postman</div>
+            <div><strong>Cloud:</strong> AWS (Lambda, S3, EC2, SNS, SQS, IAM, Cognito, AppSync, ECS, CloudFormation, CloudWatch)</div>
+            <div><strong>Version Control:</strong> Git, SVN</div>
+            <div><strong>Application Servers:</strong> Apache Tomcat, WebLogic, IBM WebSphere</div>
+        </div>
+
+        <!-- Work Experience -->
+        <h2>Work Experience</h2>
+
+        <div class="experience">
+            <div class="job">
+                <h3>Sr. Java/J2EE Developer - Legal & General, Frederick, Maryland (via TCS)</h3>
+                <span>Jun 2023 – Present</span>
+                <p>Worked on MySU application for contribution & enrolment data. Designed REST APIs, implemented Spring Boot microservices, integrated AWS services, Kafka messaging, and Angular front-end.</p>
             </div>
-            <div class="experience-item">
-                <h3>Full Stack Java Developer | Lumen Technologies, Monroe, Louisiana (via IBM)</h3>
-                <p><em>Dec 2021 - Jun 2023</em></p>
-                <p>Designed and developed microservices, REST APIs, Angular applications, CI/CD pipelines, and integrated AWS cloud solutions.</p>
+
+            <div class="job">
+                <h3>Full Stack Java Developer - Lumen Technologies, Monroe, Louisiana (via IBM)</h3>
+                <span>Dec 2021 – Jun 2023</span>
+                <p>Designed and developed microservices using Spring Boot, REST APIs, Angular front-end, CI/CD pipelines with Jenkins, AWS cloud solutions, and database integration using MongoDB & MySQL.</p>
             </div>
-            <div class="experience-item">
-                <h3>Java/J2EE Developer | British Telecom, London, UK (via Infosys)</h3>
-                <p><em>Oct 2019 - Dec 2021</em></p>
-                <p>Worked on REST/SOAP microservices, AngularJS front-end, Hibernate ORM, and Spring MVC development.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Java Developer | McGraw Hill, New York, NY</h3>
-                <p><em>Jan 2018 - Aug 2019</em></p>
-                <p>Developed microservices, Angular front-end, and RESTful APIs; performed unit and integration testing with JUnit.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Software Developer | Pramati Technologies Pvt. Ltd., India</h3>
-                <p><em>Jul 2015 - Dec 2017</em></p>
-                <p>Developed J2EE applications using Struts, Spring MVC, Hibernate, AngularJS, and implemented REST/SOAP services.</p>
+
+            <div class="job">
+                <h3>Java/J2EE Developer - British Telecom, London, UK (via Infosys)</h3>
+                <span>Oct 2019 – Dec 2021</span>
+                <p>Developed NGAE Order Processing system. Implemented REST/SOAP web services, Spring MVC, Hibernate, AngularJS, and optimized Java code for enterprise applications.</p>
             </div>
         </div>
 
-        <div class="section">
-            <h2>Education</h2>
-            <p>Bachelor of Computer Science, Yogi Vemana University – Kadapa, India (2015)</p>
+        <!-- Education -->
+        <h2>Education</h2>
+        <div class="education">
+            <p><strong>Bachelor of Computer Science</strong>, Yogi Vemana University – Kadapa, India (2015)</p>
             <p><strong>Certifications:</strong> AWS Certified Cloud Practitioner – Amazon Web Services, 2024</p>
         </div>
     </div>
