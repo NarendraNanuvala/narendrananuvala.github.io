@@ -3,125 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naren N - Resume</title>
+    <title>Naren N - Java Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f5f5f5;
             color: #333;
         }
-
         header {
-            background-color: #007bff;
+            background-color: #4CAF50;
             color: white;
-            padding: 20px 0;
             text-align: center;
+            padding: 50px 20px;
         }
-
         header img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             border: 4px solid white;
         }
-
         header h1 {
-            margin: 10px 0 5px 0;
+            margin: 20px 0 5px;
+            font-size: 36px;
         }
-
         header p {
-            margin: 5px 0 10px 0;
+            margin: 0;
+            font-size: 18px;
         }
-
-        main {
+        .container {
             max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px #aaa;
+            margin: 40px auto;
+            padding: 0 20px;
         }
-
         section {
+            margin-bottom: 50px;
+        }
+        section h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            display: inline-block;
+            padding-bottom: 5px;
             margin-bottom: 20px;
         }
-
-        section h2 {
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
+        .skills, .experience, .education {
+            list-style: none;
+            padding: 0;
         }
-
-        .resume-button {
+        .skills li, .experience li, .education li {
+            margin-bottom: 10px;
+        }
+        .resume-btn {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
+            background-color: #4CAF50;
             color: white;
             text-decoration: none;
+            padding: 12px 25px;
             border-radius: 5px;
-            margin-top: 10px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
         }
-
-        .resume-button:hover {
-            background-color: #0056b3;
+        .resume-btn:hover {
+            background-color: #45a049;
         }
-
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        a {
+            color: #4CAF50;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <img src="profile.jpg" alt="Profile Image">
-        <h1>Naren N</h1>
-        <p>Java Full Stack Developer | naren@example.com | +1 123-456-7890</p>
-        <a href="resume.pdf" class="resume-button" download>Download Resume</a>
-    </header>
+<header>
+    <img src="profile.jpg" alt="Profile Photo">
+    <h1>Naren N</h1>
+    <p>Java Full Stack Developer</p>
+    <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+</header>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>I am a passionate Java Full Stack Developer with experience in building scalable web applications using Java, Spring Boot, and front-end technologies like HTML, CSS, and JavaScript.</p>
-        </section>
+<div class="container">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate Java Full Stack Developer with experience in building scalable web applications using Java, Spring Boot, Angular, React, and modern database technologies. Always eager to learn and implement new technologies.</p>
+    </section>
 
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Java, Spring Boot, Hibernate</li>
-                <li>HTML, CSS, JavaScript, React</li>
-                <li>MySQL, MongoDB</li>
-                <li>REST API & Microservices</li>
-                <li>Git, Docker, AWS</li>
-            </ul>
-        </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li>Java, Spring Boot, Hibernate</li>
+            <li>HTML, CSS, JavaScript, Angular, React</li>
+            <li>REST APIs, GraphQL, Microservices</li>
+            <li>SQL, MySQL, MongoDB</li>
+            <li>Git, Docker, Jenkins, AWS</li>
+        </ul>
+    </section>
 
-        <section>
-            <h2>Experience</h2>
-            <p><strong>Software Developer</strong> - ABC Company (Jan 2024 - Present)</p>
-            <ul>
-                <li>Developed web applications using Java Spring Boot and React.</li>
-                <li>Implemented RESTful APIs and integrated third-party services.</li>
-                <li>Participated in Agile sprints and code reviews.</li>
-            </ul>
-        </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul class="experience">
+            <li><strong>Software Developer</strong> - ABC Technologies (2023-Present)<br>Developed full-stack applications with Spring Boot and Angular.</li>
+            <li><strong>Intern</strong> - XYZ Solutions (2022-2023)<br>Assisted in backend API development and frontend integration.</li>
+        </ul>
+    </section>
 
-        <section>
-            <h2>Education</h2>
-            <p><strong>Bachelor of Technology in Computer Science</strong> - XYZ University (2019 - 2023)</p>
-        </section>
+    <section id="education">
+        <h2>Education</h2>
+        <ul class="education">
+            <li>Bachelor of Technology in Computer Science - University Name (2019-2023)</li>
+            <li>Higher Secondary Certificate - School Name (2017-2019)</li>
+        </ul>
+    </section>
 
-        <section>
-            <h2>Contact</h2>
-            <p>Email: naren@example.com</p>
-            <p>Phone: +1 123-456-7890</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/naren" target="_blank">linkedin.com/in/naren</a></p>
-            <p>GitHub: <a href="https://github.com/naren" target="_blank">github.com/naren</a></p>
-        </section>
-    </main>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:naren@example.com">naren@example.com</a></p>
+        <p>Phone: +1 234 567 890</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/naren" target="_blank">linkedin.com/in/naren</a></p>
+        <p>GitHub: <a href="https://github.com/naren" target="_blank">github.com/naren</a></p>
+    </section>
+</div>
+
+<footer>
+    &copy; 2025 Naren N. All rights reserved.
+</footer>
 
 </body>
 </html>
