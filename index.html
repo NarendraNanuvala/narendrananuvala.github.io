@@ -3,164 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narendra Nanuvala - Java Full Stack Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Narendra Nanuvala - Sr. Java/J2EE Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* General Styles */
         body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            background: url('https://images.unsplash.com/photo-1532074205216-d0e1f8f1f9f8?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f8;
             color: #333;
         }
-        .overlay {
-            background-color: rgba(255, 255, 255, 0.95);
-            min-height: 100vh;
-            padding: 40px;
-        }
-        a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        h1, h2, h3 {
-            margin: 10px 0;
-        }
-        h1 {
-            font-size: 2.5rem;
-        }
-        h2 {
-            font-size: 1.8rem;
-            border-bottom: 2px solid #1a73e8;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-        p, li {
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        /* Header Section */
         .header {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
+            background-color: #007bff;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
         }
         .profile-img {
             width: 150px;
             height: 150px;
-            border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #1a73e8;
-        }
-        .contact-info {
-            flex: 1;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-top: -75px;
         }
         .resume-btn {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #1a73e8;
-            color: #fff;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .resume-btn:hover {
-            background-color: #0c4bbf;
-        }
-
-        /* Skills */
-        .skills {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-        .skills div {
-            background: #f0f0f0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        /* Experience & Education */
-        .experience, .education {
             margin-top: 20px;
         }
-        .job {
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #007bff;
+            font-weight: bold;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .skills span {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin: 2px;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+        .experience, .education, .certifications {
             margin-bottom: 20px;
         }
-        .job h3 {
-            margin: 0;
+        a {
+            color: #007bff;
+            text-decoration: none;
         }
-        .job span {
-            font-style: italic;
-            color: #555;
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="overlay">
-        <!-- Header -->
-        <div class="header">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Narendra Nanuvala</h1>
+        <h4>Sr. Java/J2EE Developer</h4>
+        <p>narendra04061994@gmail.com | 667-431-6218 | <a href="https://www.linkedin.com/in/narendra-n-770b6b187" target="_blank">LinkedIn</a></p>
+        <a href="resume.pdf" class="btn btn-light resume-btn" download>Download Resume</a>
+        <div>
             <img src="profile.jpg" alt="Narendra Nanuvala" class="profile-img">
-            <div class="contact-info">
-                <h1>Narendra Nanuvala</h1>
-                <h2>Sr. Java/J2EE Developer</h2>
-                <p>Email: <a href="mailto:narendra04061994@gmail.com">narendra04061994@gmail.com</a></p>
-                <p>Phone: 667-431-6218</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/narendra-n-770b6b187" target="_blank">linkedin.com/in/narendra-n-770b6b187</a></p>
-                <a href="Narendra_Resume.pdf" class="resume-btn" download>Download Resume</a>
-            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <!-- Summary -->
+        <div>
+            <h2 class="section-title">Summary</h2>
+            <ul>
+                <li>Senior Java Developer with 10+ years of experience designing and delivering scalable enterprise applications using Java 8–21, Spring Boot, and microservices architecture.</li>
+                <li>Proven ability to deliver projects on time while implementing efficient, client-focused business solutions.</li>
+                <li>Experience with SDLC using Waterfall and Agile, relational and non-relational databases, front-end development, cloud technologies (AWS), microservices, Spring ecosystem, web services, CI/CD, and unit testing.</li>
+                <li>Hands-on expertise with core Java concepts, Spring Boot, Hibernate, Kafka, Angular, TypeScript, Docker, Jenkins, and AWS services.</li>
+            </ul>
         </div>
 
-        <!-- Summary -->
-        <h2>Summary</h2>
-        <p>Senior Java Developer with 10+ years of experience designing and delivering scalable enterprise applications using Java 8–21, Spring Boot, and microservices architecture. Proven track record of reducing application deployment time by up to 40% and enhancing system reliability via AWS cloud solutions. Experienced in SDLC methodologies, databases, front-end frameworks, cloud technologies, DevOps, and microservices architecture.</p>
-
         <!-- Skills -->
-        <h2>Skills</h2>
-        <div class="skills">
-            <div><strong>Languages:</strong> Java 8–21, J2EE, SQL</div>
-            <div><strong>Front-End:</strong> HTML5, CSS3, JavaScript, TypeScript, jQuery, Angular 14, AngularJS, Bootstrap</div>
-            <div><strong>Frameworks:</strong> Spring Boot, Spring MVC, Spring Security, Hibernate, JPA, Log4j</div>
-            <div><strong>Web Services:</strong> REST, SOAP, Jersey, JAX-RS</div>
-            <div><strong>Databases:</strong> MySQL, MongoDB, Oracle</div>
-            <div><strong>DevOps & Tools:</strong> Maven, Gradle, Jenkins, Docker, Kafka, JUnit, Mockito, Git, SoapUI, Postman</div>
-            <div><strong>Cloud:</strong> AWS (Lambda, S3, EC2, SNS, SQS, IAM, Cognito, AppSync, ECS, CloudFormation, CloudWatch)</div>
-            <div><strong>Version Control:</strong> Git, SVN</div>
-            <div><strong>Application Servers:</strong> Apache Tomcat, WebLogic, IBM WebSphere</div>
+        <div>
+            <h2 class="section-title">Skills</h2>
+            <div class="skills">
+                <span>Java 8–21</span><span>J2EE</span><span>SQL</span><br>
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span><span>Angular 14</span><span>AngularJS</span><span>Bootstrap</span><br>
+                <span>Spring Boot</span><span>Spring MVC</span><span>Spring Security</span><span>Hibernate</span><span>JPA</span><span>Log4j</span><br>
+                <span>REST</span><span>SOAP</span><span>Jersey</span><span>JAX-RS</span><br>
+                <span>MySQL</span><span>MongoDB</span><span>Oracle</span><br>
+                <span>Maven</span><span>Gradle</span><span>Jenkins</span><span>Docker</span><span>Kafka</span><span>JUnit</span><span>Mockito</span><span>Git</span><br>
+                <span>AWS (Lambda, S3, EC2, SNS, SQS, IAM, Cognito, AppSync, ECS, CloudFormation, CloudWatch)</span>
+            </div>
         </div>
 
         <!-- Work Experience -->
-        <h2>Work Experience</h2>
+        <div>
+            <h2 class="section-title">Work Experience</h2>
 
-        <div class="experience">
-            <div class="job">
-                <h3>Sr. Java/J2EE Developer - Legal & General, Frederick, Maryland (via TCS)</h3>
-                <span>Jun 2023 – Present</span>
-                <p>Worked on MySU application for contribution & enrolment data. Designed REST APIs, implemented Spring Boot microservices, integrated AWS services, Kafka messaging, and Angular front-end.</p>
+            <div class="experience">
+                <h5>Sr. Java/J2EE Developer - Legal & General, Frederick, Maryland (via TCS)</h5>
+                <p><strong>Jun 2023 – Present</strong></p>
+                <ul>
+                    <li>Collaborated with development teams and stakeholders, delivered full life cycle application using SAFe Agile.</li>
+                    <li>Designed and developed RESTful microservices with Spring Boot, Angular front-end, Kafka integration, and AWS cloud services.</li>
+                    <li>Implemented CI/CD pipelines with Jenkins and Docker; leveraged GitHub Copilot to accelerate development.</li>
+                </ul>
             </div>
 
-            <div class="job">
-                <h3>Full Stack Java Developer - Lumen Technologies, Monroe, Louisiana (via IBM)</h3>
-                <span>Dec 2021 – Jun 2023</span>
-                <p>Designed and developed microservices using Spring Boot, REST APIs, Angular front-end, CI/CD pipelines with Jenkins, AWS cloud solutions, and database integration using MongoDB & MySQL.</p>
+            <div class="experience">
+                <h5>Full Stack Java Developer - Lumen Technologies, Monroe, Louisiana (via IBM)</h5>
+                <p><strong>Dec 2021 – Jun 2023</strong></p>
+                <ul>
+                    <li>Developed and documented microservices using Spring Boot, REST API, and Swagger.</li>
+                    <li>Angular front-end development, unit testing with JUnit and Mockito, CI/CD pipelines with Jenkins and Docker.</li>
+                    <li>Worked with AWS services including EC2, S3, Lambda, API Gateway, and CloudFormation.</li>
+                </ul>
             </div>
 
-            <div class="job">
-                <h3>Java/J2EE Developer - British Telecom, London, UK (via Infosys)</h3>
-                <span>Oct 2019 – Dec 2021</span>
-                <p>Developed NGAE Order Processing system. Implemented REST/SOAP web services, Spring MVC, Hibernate, AngularJS, and optimized Java code for enterprise applications.</p>
+            <div class="experience">
+                <h5>Java/J2EE Developer - British Telecom, London, UK (via Infosys)</h5>
+                <p><strong>Oct 2019 – Dec 2021</strong></p>
+                <ul>
+                    <li>Developed enterprise applications with Java 8, Spring MVC, Hibernate, AngularJS, REST/SOAP web services, and MongoDB.</li>
+                    <li>Implemented features using MVC architecture, integrated with front-end views, applied core Java concepts, and optimized database queries.</li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <h5>Java Developer - McGraw Hill, New York, NY</h5>
+                <p><strong>Jan 2018 – Aug 2019</strong></p>
+                <ul>
+                    <li>Developed microservices and REST/SOAP services, Angular front-end, Hibernate ORM, and implemented CI/CD with Jenkins.</li>
+                    <li>Worked on single-page applications, Maven build management, and test automation with JUnit.</li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <h5>Software Developer - Pramati Technologies Private Limited, India</h5>
+                <p><strong>Jul 2015 – Dec 2017</strong></p>
+                <ul>
+                    <li>Designed and developed MVC-based applications using Struts, Spring MVC, Hibernate, JSP, and JavaScript.</li>
+                    <li>Worked on REST/SOAP web services, Angular components, and batch processing using Spring Batch.</li>
+                </ul>
             </div>
         </div>
 
         <!-- Education -->
-        <h2>Education</h2>
-        <div class="education">
-            <p><strong>Bachelor of Computer Science</strong>, Yogi Vemana University – Kadapa, India (2015)</p>
+        <div>
+            <h2 class="section-title">Education</h2>
+            <p>Bachelor of Computer Science, Yogi Vemana University – Kadapa, India (2015)</p>
             <p><strong>Certifications:</strong> AWS Certified Cloud Practitioner – Amazon Web Services, 2024</p>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
